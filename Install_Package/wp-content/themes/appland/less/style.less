@@ -1,0 +1,95 @@
+/*
+	Theme Name: Appland
+	Theme URI: http://blank.lewishealey.co.uk
+	Description: A blank Bootstrap website with extras
+	Version: 1.2.0
+	Author: Lewis Healey (@lewishealey)
+	Author URI: http://lewishealey.co.uk
+	Tags: Blank, HTML5, CSS3, Font Awesome, Bootstrap
+	
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+@import url("variables.less"); 
+@import url("globals.less");
+@import url("navigation.less");
+@import url("home.less");
+@import url("layout.less"); 
+@import url("overrides.less");
+@import url("custom.less");
+@import url("queries.less"); 
+@import url("devices.css"); 
+@import url("elements.less");
+ 
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name'; 
+	src:url('font/font-name.eot');
+	src:url('font/font-name.eot?#iefix') format('embedded-opentype'),
+		url('font/font-name.woff') format('woff'),
+		url('font/font-name.ttf') format('truetype'),
+		url('font/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}

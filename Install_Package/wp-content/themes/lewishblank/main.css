@@ -1,0 +1,311 @@
+/*
+	Theme Name: Website name
+	Theme URI: http://blank.lewishealey.co.uk
+	Description: A blank Bootstrap website with extras
+	Version: 1.2.0
+	Author: Lewis Healey (@lewishealey)
+	Author URI: http://lewishealey.co.uk
+	Tags: Blank, HTML5, CSS3, Font Awesome, Bootstrap
+	
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*\
+    Variables
+\*------------------------------------*/
+/*------------------------------------*\
+    GLOBAL
+\*------------------------------------*/
+.clearboth {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.first {
+  margin: 0 !important;
+}
+/* Implementation */
+#somediv {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+body,
+html {
+  height: 100%;
+  background: #534741;
+}
+img {
+  max-width: 100%;
+}
+.primary {
+  background: #534741;
+}
+.pcomp-1 {
+  background: #505341;
+}
+.pcomp-2 {
+  background: #4a4a4a;
+}
+.psubt-1 {
+  background: #706157;
+}
+.psubt-2 {
+  background: #8c7d6e;
+}
+.psubt-3 {
+  background: #362e2b;
+}
+.psubt-4 {
+  background: #1a1514;
+}
+.secondary {
+  background: #f26d7d;
+}
+.highlight {
+  background: #f06eaa;
+}
+.white {
+  background: #f3f3f3;
+}
+.grey {
+  background: #575757;
+}
+.dark {
+  background: #121212;
+}
+.twitter {
+  background: #00aced;
+}
+.facebook {
+  background: #3b5998;
+}
+.linkedin {
+  background: #007bb6;
+}
+.primary-text {
+  color: #534741;
+}
+.pcomp-text-1 {
+  color: #505341;
+}
+.pcomp-text-2 {
+  color: #4a4a4a;
+}
+.psubt-1-text {
+  color: #706157;
+}
+.psubt-2-text {
+  color: #8c7d6e;
+}
+.psubt-3-text {
+  color: #362e2b;
+}
+.psubt-4-text {
+  color: #1a1514;
+}
+.secondary-text {
+  color: #f26d7d;
+}
+.highlight-text {
+  color: #f06eaa;
+}
+.white-text {
+  color: #f3f3f3;
+}
+.grey-text {
+  color: #575757;
+}
+.dark-text {
+  color: #121212;
+}
+.twitter-text {
+  color: #00aced;
+}
+.facebook-text {
+  color: #3b5998;
+}
+.linkedin-text {
+  color: #007bb6;
+}
+::selection {
+  background: #534741;
+  color: #FFF;
+  text-shadow: none;
+}
+::-webkit-selection {
+  background: #534741;
+  color: #FFF;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #534741;
+  color: #FFF;
+  text-shadow: none;
+}
+/*------------------------------------*\
+    HEADER
+\*------------------------------------*/
+.logo {
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 24px;
+}
+/*------------------------------------*\
+    INDEX
+\*------------------------------------*/
+.full-carousel {
+  background: #e6e6e6;
+  width: 100%;
+}
+#content {
+  padding-top: 30px;
+  background: #f3f3f3;
+}
+/*------------------------------------*\
+    INDEX : NEWS
+\*------------------------------------*/
+.news {
+  margin: 30px 0;
+}
+.news i {
+  padding-right: 10px;
+}
+#list {
+  display: none;
+}
+.date {
+  font-style: italic;
+  opacity: 0.7;
+}
+/*------------------------------------*\
+    NAVIGATION
+\*------------------------------------*/
+.navbar-brand {
+  border-right: 1px solid #eee;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*------------------------------------*\
+    PAGE:
+\*------------------------------------*/
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+footer {
+  background: #2c2c2c;
+  width: 100%;
+  padding: 30px 0;
+  color: #f3f3f3;
+}
+/*------------------------------------*\
+    FOOTER: SCHEME
+\*------------------------------------*/
+#color-scheme div {
+  height: 5px;
+}
+/*------------------------------------*\
+    FOOTER: SOCIAL
+\*------------------------------------*/
+.tweet-quote {
+  padding: 20px;
+}
+.tweet-display {
+  padding: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+.social {
+  margin: 0;
+  padding: 0;
+}
+.social li {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 18px;
+}
+/*------------------------------------*\
+    MADE BY
+\*------------------------------------*/
+.copyright {
+  background: #333;
+  color: #666666;
+}
+.copy {
+  padding: 15px 10px;
+}
+.made-by {
+  text-align: right;
+  padding: 15px 0;
+}
+.made-logo {
+  text-align: right;
+  padding-left: 0px;
+}
+.made-logo img {
+  background: #d56574;
+  padding: 10px;
+  text-align: right;
+}
+/*------------------------------------*\
+    BOOTSTRAP OVERRIDES
+\*------------------------------------*/
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

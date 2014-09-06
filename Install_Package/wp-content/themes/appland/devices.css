@@ -1,0 +1,191 @@
+/*
+ *	HTML5 Device Mockups
+ *
+ *	By:
+ *		Tomi Hiltunen
+ *		tomi@mitakuuluu.fi
+ *		http://fi.linkedin.com/in/tomihiltunen/
+ *		
+ *		Angelos Arnis
+ *		http://fi.linkedin.com/in/angelosarnis/
+ *
+ *	Inluded in this package:
+ *		- iPhone5 (black/white, portrait/landscape)
+ *		- iPad2 (black/white, portrait/landscape)
+ *		- iMac
+ *		- MacBook Pro (retina model)
+ *		- Nexus 7
+ *		- Lumia 920
+ *		- Microsoft Surface
+ *		- Galaxy S3
+ */
+
+ /* GENERAL STYLE */
+
+.device-mockup {
+	position: relative;
+	width: 100%;
+	padding-bottom: 61.775701%;
+}
+
+	.device-mockup > .device {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		width: 100%; height: 100%;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url("img/macbook/macbook.png");
+	}
+
+		.device-mockup > .device > .screen {
+			position: absolute;
+			top:    11.0438729%;
+			bottom: 14.6747352%;
+			left:   13.364486%;
+			right:  13.364486%;
+			overflow: hidden;
+		}
+
+		.device-mockup > .device > .button {
+			position: absolute;
+			top: 0; left: 0;
+			display: none;
+			overflow: hidden;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			cursor: pointer;
+		}
+                
+
+/* DEVICES */
+
+
+/* iMac */
+.device-mockup[data-device="imac"] {
+	padding-bottom: 81.230769%;
+}
+
+.device-mockup[data-device="imac"] > .device {
+	background-image: url("img/imac/imac.png");
+}
+
+.device-mockup[data-device="imac"] > .device > .screen {
+	top: 8.20707071%; bottom: 31.6919192%; left: 6.61538462%; right: 6.61538462%;
+}
+
+
+/* MacBook Pro */
+.device-mockup[data-device="macbook"] {
+	padding-bottom: 61.775701%;
+}
+
+.device-mockup[data-device="macbook"] > .device {
+	background-image: url("img/macbook/macbook.png");
+}
+
+.device-mockup[data-device="macbook"] > .device > .screen {
+	top: 11.0438729%; bottom: 14.6747352%; left: 13.364486%; right: 13.364486%;
+}
+
+
+/* iPhone5 */
+.device-mockup[data-device="iphone5"],
+.device-mockup[data-device="iphone5"][data-orientation="portrait"] {
+	padding-bottom: 200.477897%;
+}
+
+.device-mockup[data-device="iphone5"][data-orientation="landscape"] {
+	padding-bottom: 49.9701136%;
+}
+
+.device-mockup[data-device="iphone5"] > .device,
+.device-mockup[data-device="iphone5"][data-color="black"] > .device,
+.device-mockup[data-device="iphone5"][data-orientation="portrait"][data-color="black"] > .device {
+	background-image: url("img/iphone5/iphone5_port_black.png");
+}
+
+.device-mockup[data-device="iphone5"][data-orientation="landscape"] > .device,
+.device-mockup[data-device="iphone5"][data-orientation="landscape"][data-color="black"] > .device {
+	background-image: url("img/iphone5/iphone5_land_black.png");
+}
+
+.device-mockup[data-device="iphone5"][data-color="white"] > .device,
+.device-mockup[data-device="iphone5"][data-orientation="portrait"][data-color="white"] > .device {
+	background-image: url("img/iphone5/iphone5_port_white.png");
+}
+
+.device-mockup[data-device="iphone5"][data-orientation="landscape"][data-color="white"] > .device {
+	background-image: url("img/iphone5/iphone5_land_white.png");
+}
+
+.device-mockup[data-device="iphone5"] > .device > .screen,
+.device-mockup[data-device="iphone5"][data-orientation="portrait"] > .device > .screen {
+	top: 16.28%; bottom: 16.28%; left: 11.77%; right: 11.77%;
+}
+
+.device-mockup[data-device="iphone5"][data-orientation="landscape"] > .device > .screen {
+	top: 11.722488%; bottom: 11.722488%; left: 16.0191273%; right: 16.0191273%;
+}
+
+.device-mockup[data-device="iphone5"] > .device > .button,
+.device-mockup[data-device="iphone5"][data-orientation="portrait"] > .device > .button {
+	display: block;
+	top: 86.3%; bottom: 5.5%; left:  42%; right: 42%;
+}
+
+.device-mockup[data-device="iphone5"][data-orientation="landscape"] > .device > .button {
+	display: block;
+	top: 42%; bottom: 42%; left:  86.4%; right: 5.1%;
+}
+
+
+/* iPad */
+.device-mockup[data-device="ipad"],
+.device-mockup[data-device="ipad"][data-orientation="portrait"] {
+	padding-bottom: 128.406276%;
+}
+
+.device-mockup[data-device="ipad"][data-orientation="landscape"] {
+	padding-bottom: 79.9086758%;
+}
+
+.device-mockup[data-device="ipad"] > .device,
+.device-mockup[data-device="ipad"][data-color="black"] > .device,
+.device-mockup[data-device="ipad"][data-orientation="portrait"][data-color="black"] > .device {
+	background-image: url("img/ipad/ipad_port_black.png");
+}
+
+.device-mockup[data-device="ipad"][data-color="white"] > .device,
+.device-mockup[data-device="ipad"][data-orientation="portrait"][data-color="white"] > .device {
+	background-image: url("img/ipad/ipad_port_white.png");
+}
+
+.device-mockup[data-device="ipad"][data-orientation="landscape"] > .device,
+.device-mockup[data-device="ipad"][data-orientation="landscape"][data-color="black"] > .device {
+	background-image: url("img/ipad/ipad_land_black.png");
+}
+
+.device-mockup[data-device="ipad"][data-orientation="landscape"][data-color="white"] > .device {
+	background-image: url("img/ipad/ipad_land_white.png");
+}
+
+.device-mockup[data-device="ipad"] > .device > .screen,
+.device-mockup[data-device="ipad"][data-orientation="portrait"] > .device > .screen {
+	top: 12.025723%; bottom: 12.154341%; left: 13.45995%; right: 13.45995%;
+}
+
+.device-mockup[data-device="ipad"][data-orientation="landscape"] > .device > .screen {
+	top: 13.87755102%; bottom: 13.87755102%; left: 11.5459883%; right: 11.5459883%;
+}
+
+.device-mockup[data-device="ipad"] > .device > .button,
+.device-mockup[data-device="ipad"][data-orientation="portrait"] > .device > .button {
+	display: block;
+	top: 90.2%; bottom: 5.5%; left: 47.3%; right: 47.3%;
+}
+
+.device-mockup[data-device="ipad"][data-orientation="landscape"] > .device > .button {
+	display: block;
+	top: 47.3%; bottom: 47.3%; left: 90.8%; right: 4.9%;
+}

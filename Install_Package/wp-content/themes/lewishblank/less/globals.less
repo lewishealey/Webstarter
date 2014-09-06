@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    GLOBAL
+\*------------------------------------*/
+
+.clearboth { 
+	clear: both; 
+	padding: 0; 
+	margin: 0; }
+
+.first { 
+	margin: 0 !important; }
+	
+.animate (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease; }
+
+/* Implementation */
+#somediv {
+	.animate(all, 0.5s, ease-in); }
+
+body,
+html {
+	height: 100%;
+	background: @primary; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+}
+
+
+img {
+  max-width: 100%; }
+  
+  
+  
+.primary          { background: @primary; }
+.pcomp-1          { background: @complement1; }
+.pcomp-2          { background: @complement2; }
+
+.psubt-1          { background: @lighter1; }
+.psubt-2          { background: @lighter2; }
+.psubt-3          { background: @darker1; }
+.psubt-4          { background: @darker2; }
+
+
+.secondary        { background: @secondary; }
+.highlight        { background: @highlight; }
+.white            { background: @white; }
+.grey             { background: @grey; }
+.dark             { background: @dark; }
+.twitter          { background: @twitter; }
+.facebook         { background: @facebook; }
+.linkedin         { background: @linkedin; }
+
+.primary-text     { color: @primary; }
+.pcomp-text-1     { color: @complement1; }
+.pcomp-text-2     { color: @complement2; }
+
+.psubt-1-text     { color: @lighter1; }
+.psubt-2-text     { color: @lighter2; }
+.psubt-3-text     { color: @darker1; }
+.psubt-4-text     { color: @darker2; }
+
+
+.secondary-text   { color: @secondary; }
+.highlight-text   { color: @highlight; }
+.white-text       { color: @white; }
+.grey-text        { color: @grey; }
+.dark-text        { color: @dark; }
+.twitter-text     { color: @twitter; }
+.facebook-text    { color: @facebook; }
+.linkedin-text    { color: @linkedin; }
+
+
+::selection {
+	background:@primary;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:@primary;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:@primary;
+	color:#FFF;
+	text-shadow:none;
+}

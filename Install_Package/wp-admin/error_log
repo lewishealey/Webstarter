@@ -1,0 +1,6 @@
+[24-Dec-2013 18:14:50 UTC] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/makeindi/public_html/wpblank/wp-includes/class-wp-theme.php on line 675
+[24-Dec-2013 18:14:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/makeindi/public_html/wpblank/wp-includes/class-wp-theme.php:675) in /home/makeindi/public_html/wpblank/wp-includes/option.php on line 563
+[24-Dec-2013 18:14:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/makeindi/public_html/wpblank/wp-includes/class-wp-theme.php:675) in /home/makeindi/public_html/wpblank/wp-includes/option.php on line 564
+[26-Dec-2013 20:49:32 UTC] PHP Parse error:  syntax error, unexpected $end in /home/makeindi/public_html/wpblank/wp-content/themes/template-name/functions.php on line 440
+[26-Dec-2013 21:05:28 UTC] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home/makeindi/public_html/wpblank/wp-content/themes/template-name/functions.php on line 347
+[26-Dec-2013 21:07:28 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/makeindi/public_html/wpblank/wp-content/themes/template-name/functions.php on line 79
